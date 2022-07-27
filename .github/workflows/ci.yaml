@@ -30,6 +30,8 @@ jobs:
         owner: sigoden
         name: argc
       
-    - run: argc --argc-help | true
-    - run: argc | true
+    - run: argc --argc-help
+      continue-on-error: true
+    - run: argc
+      continue-on-error: true
     - run: argc build
