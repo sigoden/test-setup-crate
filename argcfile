@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# @cmd Build project
+build() {
+  echo Build...
+}
+
+# @cmd Test project
+test() {
+  echo Test...
+}
+
+# @cmd Lint project
+lint() {
+  echo Lint...
+}
+
+helper() {
+  echo Not a task
+}
+
+eval "$(argc --argc-eval $0 "$@")"
